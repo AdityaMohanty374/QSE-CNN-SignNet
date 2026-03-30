@@ -3,7 +3,6 @@
 > **"QSE-Enhanced CNN Architecture for Efficient Indian Sign Language Recognition"**  
 > Aditya Mohanty · Amrit Kumar Mishra · Nikhil Singh · Sourabh Paul  
 > School of Electronics Engineering (SENSE), VIT Chennai  
-> *Submitted to IEEE ACCESS*
 
 ---
 
