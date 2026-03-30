@@ -224,34 +224,16 @@ data/
     └── ...
 ```
 
-### Training
-
-```bash
-python train.py --data_dir ./data --epochs 100 --batch_size 32 --lr 1e-3
-```
-
-### Evaluation
-
-```bash
-python evaluate.py --data_dir ./data/val --checkpoint ./checkpoints/best_model.pt
-```
-
 ---
 
 ## 📂 Repository Structure
 
 ```
 ├── models/
-│   ├── qse_block.py        # Quantum Squeeze-and-Excitation block
-│   ├── cnn_backbone.py     # CNN feature extraction stages
 │   └── qse_cnn.py          # Full QSE-CNN architecture
-├── data/
-│   ├── augmentation.py     # Data augmentation pipeline
-│   └── dataset.py          # ISL dataset loader
-├── train.py                # Training script
-├── evaluate.py             # Evaluation script
+├── inference.py            # Evaluation script
 ├── utils/
-│   └── metrics.py          # Macro precision, recall, F1
+│   └── performance_metrics.py          # Macro precision, recall, F1
 ├── checkpoints/            # Saved model weights
 └── README.md
 ```
@@ -265,9 +247,7 @@ python evaluate.py --data_dir ./data/val --checkpoint ./checkpoints/best_model.p
 | Aditya Mohanty | B.Tech ECE, VIT Chennai (2026) |
 | Amrit Kumar Mishra | B.Tech ECE, VIT Chennai |
 | Nikhil Singh | B.Tech ECE, VIT Chennai |
-| **Sourabh Paul** *(Corresponding)* | Associate Professor, SENSE, VIT Chennai — [sourabhpaul26@gmail.com](mailto:sourabhpaul26@gmail.com) |
-
-**Dr. Sourabh Paul** received his Ph.D. from NIT Rourkela (2019) and his M.Tech from NIT Agartala (2014). His research spans image registration, remote sensing image processing, and edge detection.
+| **Sourabh Paul** *(Corresponding)* | Associate Professor, SENSE, VIT Chennai |
 
 ---
 
@@ -276,11 +256,10 @@ python evaluate.py --data_dir ./data/val --checkpoint ./checkpoints/best_model.p
 If you use this work, please cite:
 
 ```bibtex
-@article{mohanty2024qse,
+@article{mohanty2026qse,
   title     = {QSE-Enhanced CNN Architecture for Efficient Indian Sign Language Recognition},
   author    = {Mohanty, Aditya and Mishra, Amrit Kumar and Singh, Nikhil and Paul, Sourabh},
-  journal   = {IEEE Access},
-  year      = {2024},
+  year      = {2026},
   doi       = {10.1109/ACCESS.2022.Doi Number},
   note      = {School of Electronics Engineering (SENSE), VIT Chennai}
 }
